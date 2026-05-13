@@ -12,19 +12,10 @@ import SkillLayout from '@/components/home/SkillLayout.astro'
 import avatar from '@/assets/avatar.png'
 import config from '@/site-config'
 
-const webDevelopment = [
-  'Vue.js',
-  'Nuxt.js',
-  'Node.js',
-  'React.js',
-  'TypeScript',
-  'JavaScript',
-  'CSS',
-  'HTML'
-]
-const generalProgramming = ['Python', 'PyTorch', 'C', 'C++', 'C#', 'R', 'MySQL', 'PostgreSQL']
+const webDevelopment = ['Vue.js', 'Node.js', 'React.js', 'TypeScript', 'JavaScript', 'CSS', 'HTML']
+const generalProgramming = ['Python', 'PyTorch', 'C', 'C++', 'Java', 'MySQL']
 const developmentTools = ['VSCode', 'Vim', 'Git', 'Linux', 'Docker', 'Nginx']
-const designTools = ['Figma', 'Photoshop', 'Illustrator']
+const designTools = ['Audition', 'Premiere Pro', 'Photoshop', 'Illustrator']
 const others = ['Markdown', 'LaTeX']
 
 const MAX_POSTS = 10
@@ -57,7 +48,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
     <div id='content' class='animate flex flex-col gap-y-10 md:w-4/5 lg:w-5/6'>
       <Section title='About'>
-        <p class='text-muted-foreground mt-1'>Developer / Gamer / Runner </del></p>
+        <p class='text-muted-foreground mt-1'>Developer / Student / Gamer</p>
         <div class='flex flex-col gap-2 leading-6 text-muted-foreground'>
           <p>你好，我叫 Lightalso，一个平平无奇的普通大学生。</p>
           <p>目前就读于南昌大学软件学院，即将在北京大学力学与工程科学学院攻读硕士学位。</p>
