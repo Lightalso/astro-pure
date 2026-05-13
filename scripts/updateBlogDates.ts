@@ -78,7 +78,8 @@ function parseFrontmatter(content: string): {
   publishDate: string | null
   updatedDate: string | null
 } {
-  const lines = content.split('\n')
+  
+  const lines = content.replace(/^\uFEFF/, '').replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n')
 
   if (lines[0] !== '---') {
     throw new Error('Invalid frontmatter format')
@@ -348,7 +349,7 @@ async function main(): Promise<void> {
 }
 
 // 如果直接运行此脚本
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(__filename)) {
   main()
 }
 
