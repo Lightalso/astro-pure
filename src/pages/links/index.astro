@@ -10,7 +10,7 @@ const headings = [
   { depth: 2, slug: 'common-links', text: 'Common Links' },
   { depth: 2, slug: 'special-links', text: 'Special Links' },
   { depth: 2, slug: 'apply-links', text: 'Apply Links' },
-  { depth: 2, slug: 'friend-circle', text: 'Friend Circle' }
+  // { depth: 2, slug: 'friend-circle', text: 'Friend Circle' }
 ]
 
 const { friends } = links
@@ -56,9 +56,9 @@ const linkEditPage = 'https://github.com/cworld1/astro-theme-pure/blob/main/publ
     <li>请确保你的站点活着. Make sure your site is alive.</li>
     <li>博客内容不违反国家法律. Content does not violate common laws.</li>
   </ul>
-  <h2 id='friend-circle'>Friend Circle</h2>
-  <div id='friend-circle-lite-root' class='not-prose'>Loading...</div>
-  <script>
+  <!-- <h2 id='friend-circle'>Friend Circle</h2>
+  <div id='friend-circle-lite-root' class='not-prose'>Loading...</div> -->
+  <!-- <script>
     import '@/assets/styles/fc.css'
 
     import { FriendCircle } from '@/plugins/friend-circle'
@@ -70,6 +70,6 @@ const linkEditPage = 'https://github.com/cworld1/astro-theme-pure/blob/main/publ
       error_img: 'https://cravatar.cn/avatar/57d8260dfb55501c37dde588e7c3852c'
     })
     fc.load()
-  </script>
+  </script> -->
   {config.signature && <Signature />}
 </PageLayout>

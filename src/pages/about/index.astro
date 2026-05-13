@@ -23,11 +23,11 @@ const headings = [
     slug: 'education',
     text: 'Education'
   },
-  {
-    depth: 2,
-    slug: 'experience',
-    text: 'Experience'
-  },
+  // {
+  //   depth: 2,
+  //   slug: 'experience',
+  //   text: 'Experience'
+  // },
   {
     depth: 2,
     slug: 'about-blog',
@@ -38,27 +38,11 @@ const headings = [
 
 <PageLayout title='About' {headings} comment>
   <h2 id='general-talk' class='invisible m-0 h-0'>General Talk</h2>
-  <p class='text-muted-foreground'>Developer / Designer / <del>Medical student </del></p>
-  <p>你好，我叫 Arthals，是一个兴趣使然、热爱编程的医学生。</p>
-  <p>
-    目前就读于北京大学医学部，同时修读计算机科学技术双学位。一边被 <del> 病理病生理药理 </del>
-    内外妇儿折磨，一边在
-    <del> ICS 的 Lab 作业 </del> Pytorch 中 debug 到头秃。
-  </p>
-  <p>我即将在北京大学先进制造与机器人学院攻读博士学位。</p>
-  <p>我的兴趣主要在 Large Language Model / Embodied AI 方向。</p>
-  <p>我喜欢 Minecraft。</p>
-  <div class='flex w-fit gap-x-2'>
-    <!-- <img
-      src='https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fzhuozhiyongde&count_bg=%23000000&title_bg=%23000000&icon=spacex.svg&icon_color=%23E7E7E7&title=Hits&edge_flat=true'
-      class='my-0 rounded-md border'
-    /> -->
-    <img
-      alt='CodeTime Badge'
-      src='https://shields.jannchie.com/endpoint?style=flat&color=222&url=https%3A%2F%2Fapi.codetime.dev%2Fv3%2Fusers%2Fshield%3Fuid%3D20455'
-      class='rounded-md border'
-    />
-  </div>
+  <p class='text-muted-foreground mt-1'>Developer / Gamer / Runner </del></p>
+  <p>你好，我叫 Lightalso，一个平平无奇的普通大学生。</p>
+  <p>目前就读于南昌大学软件学院，即将在北京大学力学与工程科学学院攻读硕士学位。</p>
+  <p>我的兴趣主要在 LLM / AI4S 方向。</p>
+  <p>我喜欢怪物猎人和守望先锋。</p>
 
   {/* tools */}
   <h2 id='tools'>Tools</h2>
@@ -134,12 +118,12 @@ const headings = [
         href: 'https://www.adobe.com/products/photoshop',
         icon: import('@/assets/tools/photoshop.svg?raw')
       },
-      // {
-      //   name: 'Illustrator',
-      //   description: 'Vector Drawing',
-      //   href: 'https://www.adobe.com/products/illustrator',
-      //   icon: import('@/assets/tools/illustrator.svg?raw')
-      // },
+      {
+        name: 'Illustrator',
+        description: 'Vector Drawing',
+        href: 'https://www.adobe.com/products/illustrator',
+        icon: import('@/assets/tools/illustrator.svg?raw')
+      },
       {
         name: 'Figma',
         description: 'Vector Drawing',
@@ -175,34 +159,34 @@ const headings = [
       {
         platform: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/zhuozhiyongde',
+        link: 'https://github.com/Lightalso',
         text: 'followers',
-        api: 'github/zhuozhiyongde'
+        api: 'github/Lightalso'
       },
       {
-        platform: 'Zhihu',
-        icon: 'zhihu',
-        color: '#0084ff',
-        link: 'https://www.zhihu.com/people/zhuozhiyongde',
+        platform: '网易云',
+        icon: 'netease',
+        color: '#ff0000',
+        link: 'https://music.163.com/#/user/home?id=441080434',
         text: 'followers',
-        count: 356
+        api: 'neteasemusic/441080434'
       },
       {
         platform: 'Bilibili',
         icon: 'bilibili',
         color: '#fe7398',
-        link: 'https://space.bilibili.com/203396427',
+        link: 'https://space.bilibili.com/364380644',
         text: 'followers',
-        count: 280
+        count: 23
       },
       {
         platform: 'Steam',
         icon: 'steam',
         color: '#50769d',
-        link: 'https://steamcommunity.com/profiles/76561199760864774/',
+        link: 'https://steamcommunity.com/id/lightalso',
         text: 'games',
-        count: 1
-      }
+        count: 137
+      },
     ]}
   />
 
@@ -210,17 +194,17 @@ const headings = [
   <Timeline
     events={[
       {
-        date: '2021-09-01',
-        content: '<a href="https://www.pku.edu.cn"target="_blank">北京大学</a>'
+        date: '2026-09-01',
+        content: '<a href="https://www.pku.edu.cn"target="_blank">北京大学力学与工程科学学院</a>'
       },
       {
-        date: '2014-09-01',
-        content: '<a href="https://www.rdfz.cn/"target="_blank">中国人民大学附属中学</a>'
+        date: '2022-09-01',
+        content: '<a href="https://www.ncu.edu.cn/"target="_blank">南昌大学软件学院</a>'
       }
     ]}
   />
 
-  <h2 id='experience'>Experience</h2>
+  <!-- <h2 id='experience'>Experience</h2>
   <Timeline
     events={[
       {
@@ -229,7 +213,7 @@ const headings = [
           '<a href="https://slide.huh.moe/"target="_blank">北京大学 · 《计算机系统导论》课程助教</a>'
       }
     ]}
-  />
+  /> -->
 
   {/* about-blog */}
   <h2 id='about-blog'>About Blog</h2>

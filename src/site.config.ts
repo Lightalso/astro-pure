@@ -7,20 +7,20 @@ import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } fro
 export const theme: ThemeUserConfig = {
   // === Basic configuration ===
   /** Title for your website. Will be used in metadata and as browser tab title. */
-  title: "Arthals' ink",
+  title: "LIGHTALSO",
   /** Will be used in index page & copyright declaration */
-  author: 'Arthals',
+  author: 'Lightalso',
   since: 2024,
   /** Description metadata for your website. Can be used in page metadata. */
-  description: '所见高山远木，阔云流风；所幸岁月盈余，了无拘束',
+  description: '山行野宿，孤身万里',
   /** The default favicon for your site which should be a path to an image in the `public/` directory. */
   favicon: '/favicon/favicon.ico',
   /** Specify the default language for this site. */
   locale: {
-    lang: 'en-US',
-    attrs: 'en_US',
+    lang: 'zh-cn',
+    attrs: 'zh_cn',
     // Date locale
-    dateLocale: 'en-US',
+    dateLocale: 'zh-cn',
     dateOptions: {
       day: 'numeric',
       month: 'short',
@@ -29,7 +29,7 @@ export const theme: ThemeUserConfig = {
   },
   /** Set a logo image to show in the homepage. */
   logo: {
-    src: 'src/assets/avatar.jpg',
+    src: 'src/assets/avatar.png',
     alt: 'Avatar'
   },
 
@@ -67,20 +67,20 @@ export const theme: ThemeUserConfig = {
     links: [
       // Registration link
       {
-        title: '京ICP备2022002869号-2',
-        link: 'https://beian.miit.gov.cn/',
+        title: '赣公网安备36011102000971号',
+        link: 'https://beian.mps.gov.cn/#/query/webSearch?code=36011102000971',
         style: 'text-xs text-muted-foreground' // Uno/TW CSS class
       },
       {
-        title: '萌ICP备20254869号',
-        link: 'https://icp.gov.moe/?keyword=20254869',
+        title: '赣ICP备2023005716号',
+        link: 'https://beian.miit.gov.cn/',
         style: 'text-xs text-muted-foreground' // Uno/TW CSS class
       }
     ],
     /** Enable displaying a “Astro & Pure theme powered” link in your site’s footer. */
     credits: false,
     /** Optional details about the social media accounts for this site. */
-    social: { github: 'https://github.com/zhuozhiyongde', email: 'mailto:zhuozhiyongde@126.com' }
+    social: { github: 'https://github.com/Lightalso', email: 'mailto:xiaojiekang@outlook.com' }
   },
 
   content: {
@@ -95,7 +95,7 @@ export const theme: ThemeUserConfig = {
     /** Blog page size for pagination (optional) */
     blogPageSize: 8,
     // Currently support weibo, x, bluesky
-    share: ['weibo']
+    share: ['weibo', 'x']
   }
 }
 
@@ -104,13 +104,13 @@ export const integ: IntegrationUserConfig = {
   // See: https://astro-pure.js.org/docs/integrations/links
   links: {
     // Friend logbook
-    logbook: [{ date: '2024-01-16', content: '开始接纳新的伙伴！' }],
+    logbook: [{ date: '2026-05-4', content: '开始接纳新的伙伴！' }],
     // Yourself link info
     applyTip: [
       { name: 'Name', val: theme.title },
       { name: 'Desc', val: theme.description || 'Null' },
-      { name: 'Link', val: 'https://arthals.ink/' },
-      { name: 'Avatar', val: 'https://cdn.arthals.ink/Arthals.png' }
+      { name: 'Link', val: 'https://www.lightalso.com/' },
+      { name: 'Avatar', val: 'https://images.lightalso.com/uploads/lightalso/2026/02/05/6984211c6cf73.png' }
     ],
     // Cache avatars in `public/avatars/` to improve user experience.
     cacheAvatar: false,
@@ -149,17 +149,17 @@ export const integ: IntegrationUserConfig = {
   waline: {
     enable: true,
     // Server service link
-    server: 'https://waline.arthals.ink',
+    server: 'https://waline.lightalso.com',
     // Refer https://waline.js.org/en/guide/features/emoji.html
     emoji: ['bmoji', 'weibo'],
     // Refer https://waline.js.org/en/reference/client/props.html
     additionalConfigs: {
-      // search: false,
+      search: false,
       pageview: true,
       comment: true,
       locale: {
         reaction0: 'Like',
-        placeholder: 'Welcome to comment. (Email to receive replies. Login is unnecessary)'
+        placeholder: '在此处键入评论...',
       },
       imageUploader: false
     }

@@ -9,7 +9,7 @@ import PageLayout from '@/layouts/BaseLayout.astro'
 import ProjectCard from '@/components/home/ProjectCard.astro'
 import Section from '@/components/home/Section.astro'
 import SkillLayout from '@/components/home/SkillLayout.astro'
-import avatar from '@/assets/avatar.jpg'
+import avatar from '@/assets/avatar.png'
 import config from '@/site-config'
 
 const webDevelopment = [
@@ -48,7 +48,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
           <Label title='China / Beijing'>
             <Icon name='location' class='size-5' slot='icon' />
           </Label>
-          <Label title='GitHub' as='a' href='https://github.com/zhuozhiyongde' target='_blank'>
+          <Label title='GitHub' as='a' href='https://github.com/Lightalso' target='_blank'>
             <Icon name='github' class='size-5' slot='icon' />
           </Label>
         </div>
@@ -57,29 +57,12 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
     <div id='content' class='animate flex flex-col gap-y-10 md:w-4/5 lg:w-5/6'>
       <Section title='About'>
-        <p class='text-muted-foreground mt-1'>Developer / Designer / <del>Medical student </del></p>
+        <p class='text-muted-foreground mt-1'>Developer / Gamer / Runner </del></p>
         <div class='flex flex-col gap-2 leading-6 text-muted-foreground'>
-          <p>你好，我叫 Arthals，是一个兴趣使然、热爱编程的医学生。</p>
-          <p>
-            目前就读于北京大学医学部，同时修读计算机科学技术双学位。一边被
-            <del> 病理病生理药理 </del>
-            内外妇儿折磨，一边在
-            <del> ICS 的 Lab 作业 </del> PyTorch 中 debug 到头秃。
-          </p>
-          <p>我即将在北京大学先进制造与机器人学院攻读博士学位。</p>
-          <p>我的兴趣主要在 Large Language Model / Embodied AI 方向。</p>
-          <p>我喜欢 Minecraft。</p>
-          <div class='mt-1 flex gap-x-2'>
-            <!-- <img
-              src='https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fzhuozhiyongde&count_bg=%23000000&title_bg=%23000000&icon=spacex.svg&icon_color=%23E7E7E7&title=Hits&edge_flat=true'
-              class='rounded-md border'
-            /> -->
-            <img
-              alt='CodeTime Badge'
-              src='https://shields.jannchie.com/endpoint?style=flat&color=222&url=https%3A%2F%2Fapi.codetime.dev%2Fv3%2Fusers%2Fshield%3Fuid%3D20455'
-              class='rounded-md border'
-            />
-          </div>
+          <p>你好，我叫 Lightalso，一个平平无奇的普通大学生。</p>
+          <p>目前就读于南昌大学软件学院，即将在北京大学力学与工程科学学院攻读硕士学位。</p>
+          <p>我的兴趣主要在 LLM / AI4S 方向。</p>
+          <p>我喜欢怪物猎人和守望先锋。</p>
         </div>
         <Button title='More about me' class='w-fit self-end' href='/about' style='ahead' />
       </Section>
@@ -131,25 +114,31 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
         <Card
           as='a'
           heading='北京大学'
-          subheading='预防医学 & 计算机科学技术双学位'
-          date='August 2021 - Present'
+          subheading='力学与工程科学学院'
+          date='2026年9月 - Present'
           href='https://www.pku.edu.cn/'
         >
+          <div class='flex flex-col gap-2 leading-6 text-muted-foreground'>
+            <p>全日制 - 机械专业硕士</p> 
+          </div>
           <img
-            class='absolute end-0 z-0 m-0 -my-3 h-full w-1/2 object-cover opacity-40'
+            class='absolute end-0 z-0 m-0 -my-3 h-full w-1/2 object-cover opacity-20'
             src='/images/PKU.svg'
           />
         </Card>
         <Card
           as='a'
-          heading='中国人民大学附属中学'
-          subheading='早培班 & 人工智能实验班'
-          date='August 2014 - July 2021'
-          href='https://www.rdfz.cn/'
+          heading='南昌大学'
+          subheading='软件学院'
+          date='2022年9月 - 2026年6月'
+          href='https://www.ncu.edu.cn/'
         >
+          <div class='flex flex-col gap-2 leading-6 text-muted-foreground'>
+            <p>全日制 - 软件工程学士</p> 
+          </div>
           <img
-            class='absolute end-0 z-0 m-0 -my-3 h-full w-1/2 object-cover opacity-40'
-            src='/images/RDFZ.svg'
+            class='absolute end-0 z-0 m-0 -my-3 h-full w-1/2 object-cover opacity-20'
+            src='/images/NCU.svg'
           />
         </Card>
       </Section>
@@ -201,6 +190,6 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
         <SkillLayout title='Other' skills={others} />
       </Section>
     </div>
-    <Quote class='mt-12' />
+    <!-- <Quote class='mt-12' /> -->
   </main>
 </PageLayout>
