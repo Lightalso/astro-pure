@@ -110,7 +110,7 @@ export const integ: IntegrationUserConfig = {
       { name: 'Name', val: theme.title },
       { name: 'Desc', val: theme.description || 'Null' },
       { name: 'Link', val: 'https://www.lightalso.com/' },
-      { name: 'Avatar', val: 'https://images.lightalso.com/uploads/lightalso/2026/02/05/6984211c6cf73.png' }
+      { name: 'Avatar', val: 'https://images.lightalso.com/uploads/image/6a0754530d12c.jpg' }
     ],
     // Cache avatars in `public/avatars/` to improve user experience.
     cacheAvatar: false,
