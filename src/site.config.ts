@@ -159,9 +159,10 @@ export const integ: IntegrationUserConfig = {
       comment: true,
       locale: {
         reaction0: 'Like',
-        placeholder: '在此处键入评论...',
+        placeholder: '在此处键入评论',
       },
-      imageUploader: false
+      imageUploader: false,
+      noCopyright: true
     }
   }
 }
