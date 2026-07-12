@@ -1,6 +1,7 @@
 ---
 title: '北京大学力工学院12408机械专硕考研经验贴'
 publishDate: '2026-05-04'
+updatedDate: 2026-06-27 02:24:18
 description: '不要将梦想埋没'
 tags:
   - 考研
